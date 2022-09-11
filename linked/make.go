@@ -23,14 +23,6 @@ type Node struct {
 	Previous *Node
 }
 
-func (li *Node) Init() *Node {
-	return &Node{
-		Value:    nil,
-		Next:     nil,
-		Previous: nil,
-	}
-}
-
 func (li *Node) Insert(data *Field) (*Node, int) {
 	if li.Value == nil {
 		li.Value = data
